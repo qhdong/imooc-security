@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/imooc-demo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: NEWlife_root4
+  session:
+    store-type: none
+security:
+  basic:
+    enabled: false
