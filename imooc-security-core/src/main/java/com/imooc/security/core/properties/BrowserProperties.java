@@ -9,7 +9,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class BrowserProperties {
 
+    private SessionProperties session = new SessionProperties();
+
+    private String signUpUrl = "/imooc-signUp.html";
+
     private String loginPage = "/imooc-signIn.html";
+
+    private String signOutUrl;
 
     private LoginResponseType loginType = LoginResponseType.JSON;
 

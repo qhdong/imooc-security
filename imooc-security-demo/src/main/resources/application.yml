@@ -5,7 +5,10 @@ spring:
     username: root
     password: NEWlife_root4
   session:
-    store-type: none
+    store-type: redis
+  redis:
+    host: localhost
+    port: 6379
 #imooc:
 #  security:
 #    browser:
@@ -16,3 +19,19 @@ spring:
 #        length: 6
 #        width: 100
 #        url: /user/*
+imooc:
+  security:
+    browser:
+      signUpUrl: /demo-signUp.html
+      signOutUrl: /demo-logout.html
+    social:
+      qq:
+        app-id: sss
+        app-secret: ss
+        providerId: callback.do
+      filterProcessesUrl: /qqLogin
+
+server:
+  port: 8080
+  session:
+    timeout: 600
